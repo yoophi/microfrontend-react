@@ -78,8 +78,8 @@ function App() {
     <BrowserRouter>
       <>
         <Switch>
-          <Route exec path="/" component={Home} />
-          <Route exec path="/cat/:greeting" component={GreetingCat} />
+          <Route exact path="/" component={Home} />
+          <Route exact path="/cat/:greeting" component={GreetingCat} />
         </Switch>
       </>
     </BrowserRouter>
