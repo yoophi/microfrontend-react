@@ -25,11 +25,11 @@ function MicroFrontend({ name, host, history }) {
         document.head.appendChild(script);
       });
     return () => {
-        window[`unmount${name}`] && window[`unmount${name}`](`${name}-container`)
-    }
+      window[`unmount${name}`] && window[`unmount${name}`](`${name}-container`);
+    };
   });
 
-  return <main id={`${name}-container`}></main>;
+  return <main id={`${name}-container`} />;
 }
 
 MicroFrontend.defaultProps = {
