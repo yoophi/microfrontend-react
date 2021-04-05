@@ -1,0 +1,14 @@
+session_name: micro-frontend
+windows:
+- window_name: dev window
+  layout: tiled
+  panes:
+    - shell_command:           # pane cart
+        - cd cart
+        - npm run start
+    - shell_command:           # pane products
+        - cd products
+        - npm run start
+    - shell_command:           # pane container
+        - cd container
+        - npm run start
